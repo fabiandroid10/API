@@ -197,5 +197,4 @@ C:\Users\fabian\Documents\GitHub\API\WebApi - FABIAN\WebApi - FABIAN\bin\es\Micr
 C:\Users\fabian\Documents\GitHub\API\WebApi - FABIAN\WebApi - FABIAN\bin\es\System.Web.Http.Owin.resources.dll
 C:\Users\fabian\Documents\GitHub\API\WebApi - FABIAN\WebApi - FABIAN\obj\Debug\WebApi - FABIAN.dll
 C:\Users\fabian\Documents\GitHub\API\WebApi - FABIAN\WebApi - FABIAN\obj\Debug\WebApi - FABIAN.pdb
-C:\Users\fabian\Documents\GitHub\API\WebApi - FABIAN\WebApi - FABIAN\bin\WebApi - FABIAN.dll.CodeAnalysisLog.xml
-C:\Users\fabian\Documents\GitHub\API\WebApi - FABIAN\WebApi - FABIAN\bin\WebApi - FABIAN.dll.lastcodeanalysissucceeded
+C:\Users\fabian\Documents\GitHub\API\WebApi - FABIAN\WebApi - FABIAN\obj\Debug\WebApi - FABIAN.csprojResolveAssemblyReference.cache
