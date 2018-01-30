@@ -134,7 +134,7 @@ namespace WebApi___FABIAN.Controllers
                 }
                 else
                 {
-                    throw ex;
+                    throw;
                 }
             }
 
