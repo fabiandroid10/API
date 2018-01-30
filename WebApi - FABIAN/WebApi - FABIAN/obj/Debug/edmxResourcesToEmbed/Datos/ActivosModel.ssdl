@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="pruebaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="activos">
+    <Key>
+      <PropertyRef Name="id_activo" />
+    </Key>
+    <Property Name="id_activo" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="tipo" Type="varchar" MaxLength="50" />
+    <Property Name="serial" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="num_inventario" Type="varchar" MaxLength="50" />
+    <Property Name="peso" Type="varchar" MaxLength="50" />
+    <Property Name="ancho" Type="varchar" MaxLength="50" />
+    <Property Name="alto" Type="varchar" MaxLength="50" />
+    <Property Name="largo" Type="varchar" MaxLength="50" />
+    <Property Name="valor_compra" Type="float" />
+    <Property Name="fecha_compra" Type="date" Nullable="false" />
+    <Property Name="fecha_baja" Type="date" Nullable="false" />
+    <Property Name="estado" Type="varchar" MaxLength="50" />
+    <Property Name="color" Type="varchar" MaxLength="50" />
+    <Property Name="id_area" Type="int" />
+    <Property Name="id_persona" Type="int" />
+  </EntityType>
+  <EntityType Name="areas">
+    <Key>
+      <PropertyRef Name="id_area" />
+    </Key>
+    <Property Name="id_area" Type="int" Nullable="false" />
+    <Property Name="id_ciudad" Type="int" Nullable="false" />
+    <Property Name="nombre_area" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ciudad">
+    <Key>
+      <PropertyRef Name="id_ciudad" />
+    </Key>
+    <Property Name="id_ciudad" Type="int" Nullable="false" />
+    <Property Name="ciudad" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="personas">
+    <Key>
+      <PropertyRef Name="id_persona" />
+    </Key>
+    <Property Name="id_persona" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="genero" Type="varchar" MaxLength="50" />
+    <Property Name="telefono" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="pruebaModelStoreContainer">
+    <EntitySet Name="activos" EntityType="Self.activos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="areas" EntityType="Self.areas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ciudad" EntityType="Self.ciudad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="personas" EntityType="Self.personas" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
